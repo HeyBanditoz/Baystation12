@@ -93,7 +93,7 @@ if write_cl['changes']:
         yaml.dump(write_cl, cl_contents)
         cl_contents.seek(0)
 
-        with open(f"html/changelogs/AutoChangeLog-pr-{pr_number}.yml") as cl_file:
+        with open(f"html/changelogs/AutoChangeLog-pr-{pr_number}.yml", "w") as cl_file:
             cl_file.write(cl_contents.read())
     print("Done!")
 else:
