@@ -365,7 +365,7 @@
 	return L
 
 /mob/verb/mode()
-	set name = "Activate Held Object"
+	set name = "Activate Held Object Please"
 	set category = "Object"
 	set src = usr
 
