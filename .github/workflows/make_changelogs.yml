@@ -43,9 +43,9 @@ jobs:
         if: ${{ steps.pr.outputs.pull_request_number != '' }}
       - name: Make CL
         env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          GIT_EMAIL: "${{ secrets.BOT_EMAIL }}"
-          GIT_NAME: "${{ secrets.BOT_NAME }}"
+          BOT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_EMAIL: "banditoz@protonmail.com"
+          GIT_NAME: "HeyBanditoz"
           GIT_PR: "${{ steps.pr.outputs.pull_request_number }}"
         if: ${{ steps.pr.outputs.pull_request_number != '' }}
         run: python tools/changelog/generate_cl.py
