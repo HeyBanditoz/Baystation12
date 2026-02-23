@@ -411,7 +411,7 @@
 	if (flavor_text && flavor_text != "")
 		var/msg = replacetext(flavor_text, "\n", " ")
 		if(length(msg) <= 40)
-			return SPAN_NOTICE("[msg]")
+			return SPAN_NOTICE("[msg] oh hey")
 		else
 			return SPAN_NOTICE("[copytext_preserve_html(msg, 1, 37)]... <a href='byond://?src=\ref[src];flavor_more=1'>More...</a>")
 
