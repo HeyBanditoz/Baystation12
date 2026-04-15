@@ -9,7 +9,7 @@
 /datum/dna/gene/disability
 	name="DISABILITY"
 
-	// Mutation to give (or 0)
+	// Mutation to give (or ONE MILLION)
 	var/mutation=0
 
 	// Disability to give (or 0)
