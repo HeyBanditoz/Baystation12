@@ -188,6 +188,7 @@
 	#include "../away/miningstation/miningstation.dm"
 	#include "../away/mininghome/mininghome.dm"
 	#include "../away/scavver/scavver_gantry.dm"
+	#include "../away/icarus2/icarus2.dm"
 	#include "../away/abandoned_hotel/abandoned_hotel.dm"
 	#include "../away/spy_station/spy_station.dm"
 	#include "../away/salvage_shuttle/salvage_shuttle.dm"

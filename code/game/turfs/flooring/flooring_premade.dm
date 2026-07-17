@@ -176,6 +176,8 @@
 /turf/simulated/floor/reinforced/n20
 	initial_gas = list(GAS_N2O = ATMOSTANK_NITROUSOXIDE)
 
+/turf/simulated/floor/reinforced/airless
+	initial_gas = list()
 
 /turf/simulated/floor/cult
 	name = "engraved floor"
