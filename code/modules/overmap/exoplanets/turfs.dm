@@ -252,7 +252,7 @@
 	O.name = "distant terrain"
 	O.desc = "You need to come over there to take a better look."
 
-/turf/simulated/planet_edge/Bumped(atom/movable/A)
+/turf/simulated/planet_edge/Collided(atom/movable/A)
 	. = ..()
 	var/obj/overmap/visitable/sector/exoplanet/E = map_sectors["[z]"]
 	if(!istype(E))

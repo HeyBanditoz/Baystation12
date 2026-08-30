@@ -11,7 +11,7 @@
 	var/dangerous = 0
 	var/failchance = 0
 
-/obj/portal/Bumped(mob/M as mob|obj)
+/obj/portal/Collided(mob/M as mob|obj)
 	spawn(0)
 		src.teleport(M)
 		return

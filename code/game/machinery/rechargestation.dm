@@ -176,7 +176,7 @@
 	AddOverlays(list(image(overlay_icon, overlay_state())))
 	AddOverlays(emissive_appearance(icon, "statn_c100"))
 
-/obj/machinery/recharge_station/Bumped(mob/living/silicon/robot/R)
+/obj/machinery/recharge_station/Collided(mob/living/silicon/robot/R)
 	go_in(R)
 
 /obj/machinery/recharge_station/MouseDrop_T(atom/dropped, mob/living/user)

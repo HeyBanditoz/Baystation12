@@ -90,7 +90,7 @@ var/global/list/narsie_list = list()
 	else if(istype(A, /obj/structure/cult))
 		qdel(A)
 
-/obj/singularity/narsie/large/Bumped(atom/A)
+/obj/singularity/narsie/large/Collided(atom/A)
 	if(!cause_hell) return
 	if(isturf(A))
 		narsiewall(A)

@@ -89,7 +89,7 @@
 	return ..()
 
 
-/obj/structure/boulder/Bumped(AM)
+/obj/structure/boulder/Collided(AM)
 	. = ..()
 	if(istype(AM,/mob/living/carbon/human))
 		var/mob/living/carbon/human/H = AM

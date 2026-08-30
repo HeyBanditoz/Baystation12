@@ -129,7 +129,7 @@
 	damage = (rod_material.hardness * 0.85)
 	AddOverlays(overlay_image(icon, spike_overlay, color = rod_material.icon_colour, flags = RESET_COLOR))
 
-/obj/structure/barricade/spike/Bumped(mob/living/victim)
+/obj/structure/barricade/spike/Collided(mob/living/victim)
 	. = ..()
 	if(!isliving(victim))
 		return

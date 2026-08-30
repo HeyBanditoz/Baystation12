@@ -33,7 +33,7 @@
 	else
 		rattle_bones(user, null)
 
-/obj/structure/skele_stand/Bumped(atom/thing)
+/obj/structure/skele_stand/Collided(atom/thing)
 	rattle_bones(null, thing)
 
 /obj/structure/skele_stand/examine(mob/user)

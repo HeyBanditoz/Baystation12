@@ -36,7 +36,7 @@
 	var/spam_flag = 0
 	var/last_modified_ckey
 	var/age = 0
-	var/list/metadata
+	var/list/extra_data
 	var/readable = TRUE //Paper will not be able to be written on and will not bring up a window upon examine if FALSE
 	var/is_memo = FALSE //If TRUE, paper will act the same as readable = FALSE, but will also be unrenameable.
 	var/datum/language/language = LANGUAGE_HUMAN_EURO //Language the paper was written in. Editable by users up until something's actually written
@@ -44,11 +44,11 @@
 	var/is_copy = TRUE
 
 
-/obj/item/paper/Initialize(mapload, text, title, list/metadata, datum/language/language)
+/obj/item/paper/Initialize(mapload, text, title, list/extra_data, datum/language/language)
 	. = ..()
 	set_content(text ? text : info, title)
-	if (metadata)
-		src.metadata = metadata
+	if (extra_data)
+		src.extra_data = extra_data
 	if (language)
 		src.language = language
 	if (!set_language(src.language, TRUE))

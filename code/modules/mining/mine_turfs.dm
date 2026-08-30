@@ -116,7 +116,7 @@ var/global/list/mining_floors = list()
 			mined_ore = 1
 			GetDrilled()
 
-/turf/simulated/mineral/Bumped(AM)
+/turf/simulated/mineral/Collided(AM)
 	. = ..()
 	if (ismob(AM))
 		var/mob/mob = AM

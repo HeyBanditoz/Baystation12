@@ -46,7 +46,7 @@
 					PC.parent.energy += energy
 					qdel(src)
 
-/obj/accelerated_particle/Bumped(atom/A)
+/obj/accelerated_particle/Collided(atom/A)
 	if (!active)
 		return
 	if(ismob(A))

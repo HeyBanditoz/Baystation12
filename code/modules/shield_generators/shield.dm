@@ -242,7 +242,7 @@
 
 
 // Special treatment for meteors because they would otherwise penetrate right through the shield.
-/obj/shield/Bumped(atom/movable/mover)
+/obj/shield/Collided(atom/movable/mover)
 	if(!gen)
 		qdel(src)
 		return 0

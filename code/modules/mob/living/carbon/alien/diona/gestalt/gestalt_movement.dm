@@ -22,7 +22,7 @@
 		visible_message(SPAN_NOTICE("The nascent gestalts combine together!")) // Combine!
 		step_towards(src, gestalt_loc)
 
-/obj/structure/diona_gestalt/Bumped(atom/A)
+/obj/structure/diona_gestalt/Collided(atom/A)
 	. = ..()
 	if(istype(A, /mob/living/carbon/alien/diona) && A.Adjacent(src)) // Combine...
 		roll_up_atom(A)

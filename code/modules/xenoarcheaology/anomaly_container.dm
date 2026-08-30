@@ -130,7 +130,7 @@
 			return
 		user.visible_message(SPAN_NOTICE("The bolts on \the [over_object] drop with an hydraulic hiss, sealing its contents."))
 		playsound(loc, 'sound/mecha/hydraulic.ogg', 40)
-		Bumped(usr)
+		Collided(usr)
 		over_object.contain(src)
 	return
 /obj/machinery/anomaly_container/on_death()

@@ -121,6 +121,7 @@
 	var/bad_build = config.minimum_byond_build && byond_build < config.minimum_byond_build
 	if (bad_build || bad_version)
 		to_chat(src, "You are attempting to connect with a out of date version of BYOND. Please update to the latest version at http://www.byond.com/ before trying again.")
+		log_and_message_admins("Kicking [src] due to bad version [bad_version].[bad_build]")
 		qdel(src)
 		return
 

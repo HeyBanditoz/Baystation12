@@ -111,7 +111,7 @@
 	. = ..()
 	check_triggers(TYPE_PROC_REF(/datum/artifact_trigger, on_hit), W, user)
 
-/obj/machinery/artifact/Bumped(M)
+/obj/machinery/artifact/Collided(M)
 	..()
 	check_triggers(TYPE_PROC_REF(/datum/artifact_trigger, on_bump), M)
 

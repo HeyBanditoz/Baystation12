@@ -260,7 +260,7 @@
 		return FALSE
 	return ..()
 
-/obj/structure/stairs/Bumped(atom/movable/A)
+/obj/structure/stairs/Collided(atom/movable/A)
 	var/turf/above = GetAbove(A)
 	if (above)
 		var/turf/target = get_step(above, dir)
