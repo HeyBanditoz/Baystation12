@@ -7,20 +7,7 @@
 	. = list()
 
 /singleton/webhook/proc/http_post(target_url, payload)
-	if (!target_url)
-		return -1
-
-	var/result = call_ext(HTTP_POST_DLL_LOCATION, "send_post_request")(target_url, payload, json_encode(list("Content-Type" = "application/json")))
-
-	result = json_decode(result)
-	if (result["error_code"])
-		log_debug("byhttp error: [result["error"]] ([result["error_code"]])")
-		return result["error_code"]
-
-	return list(
-		"status_code" = result["status_code"],
-		"body" = result["body"]
-	)
+	return // stub
 
 /singleton/webhook/proc/send(list/data)
 	var/message = get_message(data)

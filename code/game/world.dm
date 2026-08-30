@@ -70,11 +70,6 @@ GLOBAL_VAR(href_logfile)
 #endif
 
 /world/New()
-	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
-	if (debug_server)
-		call_ext(debug_server, "auxtools_init")()
-		enable_debugging()
-
 	var/date_string = time2text(world.realtime, "YYYY/MM/DD")
 	to_file(global.diary, "[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]")
 
