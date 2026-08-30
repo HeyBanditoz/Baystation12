@@ -67,7 +67,7 @@
 	return TRUE
 
 
-/obj/machinery/tele_pad/Bumped(atom/movable/AM)
+/obj/machinery/tele_pad/Collided(atom/movable/AM)
 	try_teleport(AM)
 
 

@@ -78,10 +78,10 @@
 	/// The door/airlock this fluff panel is attached to
 	var/obj/machinery/door/filled_airlock
 
-/obj/airlock_filler_object/Bumped(atom/A)
+/obj/airlock_filler_object/Collided(atom/A)
 	if(isnull(filled_airlock))
 		crash_with("Someone bumped into an airlock filler with no parent airlock specified!")
-	return filled_airlock.Bumped(A)
+	return filled_airlock.Collided(A)
 
 /obj/airlock_filler_object/Destroy()
 	filled_airlock = null

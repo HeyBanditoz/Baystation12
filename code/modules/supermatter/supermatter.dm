@@ -635,7 +635,7 @@
 	return ..()
 
 
-/obj/machinery/power/supermatter/Bumped(atom/AM as mob|obj)
+/obj/machinery/power/supermatter/Collided(atom/AM as mob|obj)
 	if(istype(AM, /obj/effect))
 		return
 	if(istype(AM, /mob/living))

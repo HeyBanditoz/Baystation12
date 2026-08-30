@@ -336,7 +336,7 @@ var/global/const/STASISCAGE_WIRE_LOCK      = 4
 		"You begin stuffing \the [target] into \the [src]."
 		)
 	playsound(src, 'sound/items/shuttle_beacon_prepare.ogg', 100)
-	Bumped(user)
+	Collided(user)
 	if (do_after(user, 2 SECONDS, src, DO_PUBLIC_UNIQUE))
 		var/obj/energy_net/EN = target.buckled
 		qdel(EN)

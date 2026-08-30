@@ -3,9 +3,9 @@
 	scan_file_type = /datum/computer_file/data/bodyscan
 
 /obj/item/paper/bodyscan/examine(mob/user)
-	set_content(display_medical_data(metadata, user.get_skill_value(SKILL_MEDICAL), TRUE))
+	set_content(display_medical_data(extra_data, user.get_skill_value(SKILL_MEDICAL), TRUE))
 	. = ..()
 
 /obj/item/paper/bodyscan/show_info(mob/user)
-	set_content(display_medical_data(metadata, user.get_skill_value(SKILL_MEDICAL), TRUE))
+	set_content(display_medical_data(extra_data, user.get_skill_value(SKILL_MEDICAL), TRUE))
 	. = ..()

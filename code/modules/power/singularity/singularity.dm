@@ -73,7 +73,7 @@
 /obj/singularity/Bump(atom/A, called)
 	consume(A)
 
-/obj/singularity/Bumped(atom/A)
+/obj/singularity/Collided(atom/A)
 	consume(A)
 
 /obj/singularity/Process()

@@ -51,7 +51,7 @@
 	charge_user(grab.affecting)
 
 
-/obj/structure/adherent_pylon/Bumped(atom/AM)
+/obj/structure/adherent_pylon/Collided(atom/AM)
 	if(ishuman(AM))
 		charge_user(AM)
 

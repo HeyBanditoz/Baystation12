@@ -178,7 +178,7 @@ var/global/list/meteors_cataclysm = list(\
 
 /obj/meteor/Bump(atom/A, called)
 	..()
-	if(A && !QDELETED(src))	// Prevents explosions and other effects when we were deleted by whatever we Bumped() - currently used by shields.
+	if(A && !QDELETED(src))	// Prevents explosions and other effects when we were deleted by whatever we Collided() - currently used by shields.
 		ram_turf(get_turf(A))
 		get_hit() //should only get hit once per move attempt
 

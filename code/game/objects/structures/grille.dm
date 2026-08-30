@@ -82,7 +82,7 @@
 					I = image(icon, "grille[connections[i]]", dir = SHIFTL(1, i - 1))
 				AddOverlays(I)
 
-/obj/structure/grille/Bumped(atom/user)
+/obj/structure/grille/Collided(atom/user)
 	if(ismob(user)) shock(user, 70)
 
 /obj/structure/grille/attack_hand(mob/user as mob)

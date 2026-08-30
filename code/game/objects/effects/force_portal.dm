@@ -51,7 +51,7 @@
 	playsound(src,'sound/effects/teleport.ogg',40,1)
 	return
 
-/obj/force_portal/Bumped(atom/movable/AM)
+/obj/force_portal/Collided(atom/movable/AM)
 	AM.dropInto(src)
 
 /obj/force_portal/bullet_act(obj/item/projectile/P)

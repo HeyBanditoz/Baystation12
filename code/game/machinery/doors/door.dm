@@ -117,7 +117,7 @@
 		return 0
 	return 1
 
-/obj/machinery/door/Bumped(atom/AM)
+/obj/machinery/door/Collided(atom/AM)
 	if (p_open || operating)
 		return
 	if(ismob(AM))

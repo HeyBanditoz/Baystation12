@@ -235,7 +235,7 @@
 		inertia_dir = 0
 	if (A && called)
 		A.last_bumped = world.time
-		invoke_async(A, TYPE_PROC_REF(/atom, Bumped), src) // Avoids bad actors sleeping or unexpected side effects, as the legacy behavior was to spawn here
+		invoke_async(A, TYPE_PROC_REF(/atom, Collided), src) // Avoids bad actors sleeping or unexpected side effects, as the legacy behavior was to spawn here
 	..()
 
 

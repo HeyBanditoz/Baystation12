@@ -19,7 +19,7 @@ var/global/list/obj/bump_teleporter/BUMP_TELEPORTERS = list()
 	BUMP_TELEPORTERS -= src
 	return ..()
 
-/obj/bump_teleporter/Bumped(atom/user)
+/obj/bump_teleporter/Collided(atom/user)
 	if(!ismob(user))
 		//user.loc = src.loc	//Stop at teleporter location
 		return

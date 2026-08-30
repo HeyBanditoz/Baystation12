@@ -70,7 +70,7 @@
 	var/spread_step = 10	//higher means the pellets spread more across body parts with distance
 	is_pellet = TRUE
 
-/obj/item/projectile/bullet/pellet/Bumped()
+/obj/item/projectile/bullet/pellet/Collided()
 	. = ..()
 	bumped = 0 //can hit all mobs in a tile. pellets is decremented inside attack_mob so this should be fine.
 

@@ -306,7 +306,7 @@
 				if (door.allowed(holder) && door.operable())
 					// First, try to open the door if possible without smashing it. We might have access.
 					ai_log("destroy_surroundings() : Opening closed door.", AI_LOG_INFO)
-					return door.Bumped(holder)
+					return door.Collided(holder)
 
 				//Try to force the door if its broken/has no power
 				return pry_door(door)

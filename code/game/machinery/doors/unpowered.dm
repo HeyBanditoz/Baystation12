@@ -3,7 +3,7 @@
 	autoset_access = FALSE
 	health_resistances = DAMAGE_RESIST_PHYSICAL
 
-/obj/machinery/door/unpowered/Bumped(atom/AM)
+/obj/machinery/door/unpowered/Collided(atom/AM)
 	if(src.locked)
 		return
 	..()

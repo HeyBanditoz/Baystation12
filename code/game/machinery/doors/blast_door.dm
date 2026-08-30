@@ -67,10 +67,10 @@
 	if(MACHINE_IS_BROKEN(src))
 		to_chat(user, "It's broken.")
 
-// Proc: Bumped()
+// Proc: Collided()
 // Parameters: 1 (AM - Atom that tried to walk through this object)
 // Description: If we are open returns zero, otherwise returns result of parent function.
-/obj/machinery/door/blast/Bumped(atom/AM)
+/obj/machinery/door/blast/Collided(atom/AM)
 	if(!density)
 		return ..()
 	else

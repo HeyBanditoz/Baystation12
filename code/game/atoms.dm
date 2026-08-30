@@ -215,7 +215,7 @@
  * **Parameters**:
  * - `AM` - The atom that bumped into src.
  */
-/atom/proc/Bumped(AM as mob|obj)
+/atom/proc/Collided(AM as mob|obj)
 	return
 
 /**
