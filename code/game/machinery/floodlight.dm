@@ -33,10 +33,10 @@
 
 	// If the cell is almost empty rarely "flicker" the light. Aesthetic only.
 	if(prob(30))
-		set_light(l_range, l_power / 2, angle = LIGHT_VERY_WIDE)
+		set_light(l_range, l_power / 2, angle = LIGHT_WIDE)
 		spawn(20)
 			if(use_power)
-				set_light(l_range, l_power, angle = LIGHT_VERY_WIDE)
+				set_light(l_range, l_power, angle = LIGHT_WIDE)
 
 // Returns 0 on failure and 1 on success
 /obj/machinery/floodlight/proc/turn_on(loud = 0)
